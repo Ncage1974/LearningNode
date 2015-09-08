@@ -8,8 +8,9 @@
     "email": "hi@example.org"
   },
   "dependencies": {
+    "ejs": "^2.3.4",
+    "ejs-locals": "^1.0.2",
     "express": "^4.13.3",
-    "jade": "^1.11.0",
     "underscore": "^1.8.3"
   }
 }
