@@ -7,6 +7,7 @@ app.get("/", function(req,res) {
 });
 
 app.get("/api/users",function(req,res) {
+	res.set("Content-Type", "application/json");
 	res.send({name: "Brent", isValid:true, group: "Admin"});
 });
 
