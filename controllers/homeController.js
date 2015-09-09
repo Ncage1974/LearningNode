@@ -1,8 +1,13 @@
 (function(homeController) {
+	var data = require("../data");
+	
 	homeController.init = function(app) {
 		app.get("/", function(req,res) {
-			//res.send("<htmL><body><h2>express is working now</h2></body></html>")
-			res.render("vash/index", {title: "Express + Vash"});
+			
+			data.getNoteCategories(function(err, results) {
+				res.render("vash/index", {title: "Express + Vash", error: err, categories: results});
+			});
+			
 		});	
 	};
 })(module.exports);
