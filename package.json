@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "express": "^4.13.3",
-    "underscore": "^1.8.3",
     "vash": "^0.9.3"
   }
 }
